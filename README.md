@@ -1,3 +1,5 @@
+## Note!!! With this current script, both PSM1 and PSM2 must be up and running!
+
 # SynchronizedRecorder
 An ROS node that synchronizes and records images and kinematic data. The synchronized data pairs are saved in organized folders with timestamps as folder names. Each folder contains:
 1. A synchronized image (image.png)
@@ -40,7 +42,7 @@ Here'a full list of all dependencies necessary for this node:
     First, navigate to this folder: username@lcsr-dvrk-xx: ~/catkin_ws/src/dvrk/dvrk_config_jhu/jhu-daVinci
     Start this using the following command:
     ```
-    rosrun dvrk_robot dvrk_console_json -j console-PSM1.json -p 0.001
+    rosrun dvrk_robot dvrk_console_json -j console-SUJ-ECM-PSM1-PSM2.json -p 0.001
     ```
     Important: verify that the dvrk is in the powered on status in the console!
     
